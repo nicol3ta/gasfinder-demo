@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.1">
+ <CommandSet xml:lang="de-DE">
+  <CommandPrefix>Sprit Sucher</CommandPrefix>
+  <Example> finde die nächste Tankstelle </Example>
+
+  <Command Name="NextStation">
+   <Example> wo ist die nächste Tankstelle </Example>
+    <ListenFor> wo {ist} die nächste Tankstelle</ListenFor>
+    <ListenFor> wo {ist} die nächste Tankstelle mit [billigem] {Sprit} </ListenFor>
+    <ListenFor> {finde} die nächste Tankstelle </ListenFor>
+    <ListenFor> {finde} die nächste Tankstelle mit [billigem] {Sprit} </ListenFor>
+    <ListenFor> {finde} die nächste Tankstelle mit günstigem {Sprit} </ListenFor>
+    <ListenFor> {finde} die günstigste Tankstelle [in meiner Nähe] </ListenFor>
+    <Feedback> Suche Tankstelle... </Feedback>
+    <Navigate />
+   </Command>
+    
+   <PhraseList Label="ist">
+     <Item> befindet sich </Item>
+     <Item> finde ich </Item>
+     <Item> gibt es </Item>
+   </PhraseList>
+
+   <PhraseList Label="finde">
+     <Item> suche </Item>
+     <Item> finde </Item>
+     <Item> vermittle </Item>
+     <Item> entdecke </Item>
+   </PhraseList>
+
+   <PhraseList Label="Sprit">
+     <Item> Benzin </Item>
+     <Item> Sprit </Item>
+     <Item> E10 </Item>
+     <Item> Super </Item>
+     <Item> Super Plus </Item>
+     <Item> Diesel </Item>
+   </PhraseList>
+
+ </CommandSet>
+</VoiceCommands>
